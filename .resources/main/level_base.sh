@@ -11,11 +11,11 @@ if [[ "$rank" == "rank02" ]]; then
     if [[ "$level" == *"level0"* ]]; then
         qsub=(first_word fizzbuzz ft_putstr ft_strcpy ft_strlen ft_swap repeat_alpha rev_print rot_13 rotone search_and_replace ulstr)
     elif [[ "$level" == *"level1"* ]]; then
-        qsub=(alpha_mirror camel_to_snake print_bits do_op ft_atoi ft_strcmp reverse_bits ft_strrev ft_strcspn ft_strdup inter is_power_of_2 last_word max snake_to_camel swap_bits union wdmatch)
+        qsub=(ft_atoi ft_strcmp ft_strrev ft_strdup inter last_word union wdmatch)
     elif [[ "$level" == *"level2"* ]]; then
-        qsub=(add_prime_sum epur_str expand_str ft_list_size ft_atoi_base ft_range ft_rrange hidenp lcm paramsum pgcd print_hex rstr_capitalizer str_capitalizer tab_mult)
+        qsub=(ft_list_size ft_atoi_base ft_range ft_rrange)
     elif [[ "$level" == *"level3"* ]]; then
-        qsub=(flood_fill fprime ft_itoa ft_split rev_wstr rostring ft_list_foreach sort_int_tab sort_list ft_list_remove_if)
+        qsub=(ft_itoa ft_split ft_list_foreach sort_list ft_list_remove_if)
     else
         echo "Invalid level: $level for rank02"
         exit 1
